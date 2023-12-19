@@ -1,265 +1,268 @@
-@font-face {
-    font-family: Sofia;
-    src: url(sofiasans/ttf/SofiaSans-ExtraLightItalic.ttf);
-}
-
-@font-face {
-    font-family: Sofia-Bold;
-    src: url(sofiasans/ttf/SofiaSans-BoldItalic.ttf);
-}
-
-
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
     font-family: 'Sofia';
-    
+    src: url(fonts/SofiaSans-Regular.otf);
 }
 
-img {
-    width: 50px;
+@font-face {
+    font-family: 'SofiaBold';
+    src: url(fonts/SofiaSans-Bold.otf);
 }
 
-.container {
-    /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 150px;
+@font-face {
+    font-family: 'SofiaSBold';
+    src: url(fonts/SofiaSans-SemiBold.otf);
 }
 
-/* body {
-    background-color: #920DA7;
-} */
-
-#header {
-    background-color: #920DA7;
-    padding: 25px 0 70px 0;
-    display: flex;
-    width: 100%;
-    height: auto;
-    
+html{
+    scroll-behavior: smooth;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-}
 
-.logo h1 {
+.modo-escuro{
+    background-color: black;
     color: white;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: normal
 }
 
-.logo span {
+header a {
+    text-decoration: none;
+    color: white;
+    font: 400 italic 28px 'Sofia', sans-serif;
+    padding: 0 30px;
+}
+
+#roxo {
+    background: #920DA7;
+    padding-bottom: 100px;
+}
+
+#roxo h1,
+#rodape h1 {
+    font: 500 italic 48px 'Sofia', sans-serif;
+    color: white;
+}
+
+#roxo span,
+#rodape span {
     color: #70FF00;
 }
 
-.botao {
-    margin-left: 280px;
+header {
+    padding-top: 35px;
+    padding-left: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.botoes {
-    margin-left: 200px;
+header i {
+    font-size: 30px;
 }
 
-.botoes a {
-    color: white;
-    margin-left: 60px;
-    margin: 0 20px;
-    font-size: 35px;
-    font-family: 'Sofia';
+.retangulo-verde {
+    width: 367px;
+    height: 418px;
+    border-radius: 54px;
+    background: #52BA00;
 }
 
-.homem img {
-    margin-top: 140px;
-    width: 335px;
-    height: 450px;
-    border-radius: 50px;
-    box-shadow: -63px -50px 0px -1px rgba(82,186,0,1);
-}
-
-.homem {
+#roxo .container {
+    margin: 140px 10%;
     display: flex;
     align-items: center;
 }
 
-.homem p {
+#roxo .container img {
+    position: absolute;
+    border-radius: 55px;
+    top: 310px;
+    margin-left: 50px;
+}
+
+.frase h2 {
+    font: 500 italic 60px 'Sofia', sans-serif;
     color: white;
     text-align: center;
-    font-size: 50px;
-    font-style: italic;
-    font-weight: 600;
-    margin-left: 400px;
 }
 
-.servico {
-    padding: 50px 0 50px 0;
+.frase {
+    margin-left: 200px;
 }
 
-.servico .titulo {
+#servicos h1,
+#contato h1 {
     color: #EA4710;
-    font-size: 45px;
-    font-style: italic;
-    font-weight: 400;
+    font: 400 italic 45px 'Sofia', sans-serif;
 }
 
-.servico .titulo span {
-    font-family: 'Sofia-Bold';
-}
-
-.servico img {
-    margin-top: 25px;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 20px;
-    
-}
-
-.fileira {
-    display: flex;
-    justify-content: space-between;
-}
-
-.servico .textos {
-    margin-top: 25px;
-    font-size: 25px;
-    display: flex;
-    justify-content: space-between;
+#servicos .container span,
+#contato span {
     font-weight: 600;
+    font-family: 'SofiaSBold', sans-serif;
 }
 
-.textos h3 span {
-    font-family: 'Sofia-Bold';
+#servicos .container {
+    margin: 115px 10%;
 }
 
-.blog {
-    background-color: #920DA7;
-    width: 100%;
-    height: auto;
-    padding: 55px 0 85px 0;
+#servicos p {
+    color: #000;
+    font: 400 italic 30px 'Sofia', sans-serif;
+    margin: 30px 0;
 }
 
-.blog .titulo {
-    color:#70FF00;
-    font-size: 45px;
+#servicos span {
+    font-weight: 500;
+    font-family: 'SofiaSBold', sans-serif;
 }
 
-.blog .titulo span {
-    font-family: 'Sofia-Bold';
+#servicos img {
+    width: 287px;
+    height: 290px;
 }
 
-.blog img {
-    width: 1100px;
+#servicos .imagens {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-around;
 }
 
-.camera {
-    margin-top: 50px;
+#servicos .coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blog {
+    background: #920DA7;
+}
+
+#blog h1 {
+    color: #70FF00;
+    font: 400 italic 45px 'Sofia', sans-serif;
+}
+
+#blog span {
+    font-weight: 600;
+    font-family: 'SofiaSBold', sans-serif;
+}
+
+#blog .container {
+    padding: 115px 10%;
+}
+
+#blog .camera {
     text-align: center;
+    margin-top: 100px;
 }
 
-.contato {
-    padding: 55px 0 55px 0;
+#contato .container {
+    margin: 115px 10%;
 }
 
-.contato .titulo {
-    color: #EA4710;
-    font-size: 45px;
-}
-
-.contato .titulo span {
-    font-family: 'Sofia-Bold';
-}
-
-.contato img {
-    width: 380px;
-    
-}
-
-.conteudo {
-    margin-top: 20px;
+form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 30px;
 }
 
-.forms p {
-    font-size: 28px;
-    font-weight: 400;
-    margin-top: 25px;
+input,
+textarea {
+    border-radius: 8px;
+    background: #D9D9D9;
 }
 
-.form input {
-    padding: 0 0 0 10px;
-    color: black;
-    margin-top: 10px;
-    background-color: #D9D9D9;
-    border-radius: 10px;
-    width: 360px;
-    height: 40px;
-    /* justify-content: space-between; */
-}
-
-.form textarea {
-    margin-top: 10px;
-    height: 40px;
+textarea {
     resize: none;
-    padding: 5px 0 0 10px;
-    background-color: #D9D9D9;
-    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+    outline: 0;
+    font: 500 18px 'Sofia', sans-serif;
 }
 
-.enviar {
-    color: white;
-    margin-left: 100px;
-    margin-top: 35px;
-    font-family: 'Sofia';
-    font-weight: 800;
-    font-size: 20px;
+input {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 35px;
+    padding-left: 20px;
+    outline: 0;
+    font: 500 18px 'Sofia', sans-serif;
+}
+
+label {
+    color: #000;
+    font: 600 italic 20px 'SofiaSBold', sans-serif;
+}
+
+button {
     border-radius: 40px;
     background: #920DA7;
     width: 150px;
-    height: 40px;
+    padding: 10px;
+    color: #FFF;
+    font: 400 italic 20px 'Sofia', sans-serif;
 }
 
+.button{
+    text-align: center;
+    margin-top: 80px;
+}
 
+#contato .separado {
+    display: flex;
+    margin-top: 90px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-/* body {
-    background-color: white;
-    color: black;
+#contato .separado img {
+    width: 400px;
+    height: 760px;
+}
+
+#contato .bolsa {
+    margin-left: 100px;
+    text-align: center;
+}
+
+#rodape{
+    background: #920DA7;
+}
+
+#rodape .container{
+    padding: 115px 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: white;
+    font: 400 italic 28px 'Sofia', sans-serif;
+    padding: 0 30px;
+
 }
 
 .modo-escuro {
-    background-color: black;
-    color: white;
-} */
+    background-color: #18091b;
+    color: #fff;
+}
 
+.texto-claro{
+    color: #FFF;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.texto-escuro{
+    color: #000;
+}
 
 
 
